@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Catamaran";
+}
+
+#page-title
+{
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("images/homepage.jpg");
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+#page-title h1 {
+    color: white;
+    font-size: calc(20px + 15vmin);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    word-spacing: 30px;
+    padding-top: 150px;
+
+}
+
+nav h3 {
+    padding-top:20px;
+}
+
+button {
+    margin-top: 50px;
+    padding: 2vh 3vw;
+    font-size: 24px;
+    text-align: center;
+}
+
+button:hover {
+    background-color:  rgb(168, 255, 193);
+    cursor: pointer;
+}
+
+.soil h2 {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: calc(20px + 15vmin);
+    background-image: url("images/soil.jpg");
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+.mission {
+    color: white;
+    background-color: darkgreen;
+}
+
+.mission h2{
+    text-align: center;
+    font-size: 52px;
+    word-spacing: 30px;
+    padding-top: 80px;
+}
+
+.mission p {
+    font-size: 4vmin;
+    margin: 50px 10vw 150px 10vw;
+    text-align: center;
+    display: inline-block;
+}
+
+.dirt h2{
+    background-image: url("images/tinyplant.png");
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 230px;
+    color: white;
+}
+
+#video
+{
+    padding-top: 20px;
+    padding-left: 5vw;
+}
+
+.process {
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.process h1 {
+    line-height: 300px;
+    font-size: 350px; 
+    margin: 100px 75px 40px ;
+    float: left;
+}
+
+.process h3 {
+    font-size: 8vh;
+    margin: 50px 0px 20px 0px;
+}
+
+
+.seeds {
+    margin: 40px 20px;
+    height: 30vh;
+    text-align: center;
+}
+
+.process2 {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: darkgreen;
+    /* margin-top: 300px; */
+}
+
+.process2 h1 {
+    line-height: 320px;
+    font-size: 350px; 
+    margin: 120px 100px;
+    float: right;
+}
+
+.process2 h3 {
+    font-size: 8vh;
+    margin: 50px 0px 20px 100px;
+    padding-top: 50px;
+}
+
+.process2 h4 {
+    margin-top: 25px;
+    margin-left: 100px;
+    font-size: 42px;
+}
+
+.process2 .video {
+    margin-top: 0;
+    padding: 0px 300px;
+}
+
+.plant {
+   padding: 0px 50px 0 50px;
+   float: left;
+   width: 40vw;
+
+}
+
+p{
+    font-size: 26px;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#video-small
+{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #video{
+        display: none;
+    }
+    #video-small{
+        display: inline;
+        margin: 0;
+    } 
+    .plant{
+        width: 65vw;
+        float: none;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mission p{font-size: 20px;}
+}
+
+@media screen and (max-width: 800px)
+{
+    .process2 h4{
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .process h3{
+        margin:0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .process2 h3{
+        margin:0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .process h1{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        float:none;
+    }
+    .process2 h1{
+        width: 100%;
+        text-align: center;
+        margin:0;
+        float: none;
+    }
+
+    
+}
+

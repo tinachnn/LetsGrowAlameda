@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+
+body {
+    background-color: #3d7c47;
+    padding:0px;
+    margin:0px;
+    font-family: "Catamaran";
+}
+#logo-img{
+    float: left;
+    position: relative;
+    padding-top: 10px;
+}
+a img{
+    height: 100px;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+nav h3 {
+    display: inline-block;
+    font-size: 25px;
+    padding-left: 0px;
+    color:rgb(40,40,40);
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    padding: 23px;
+    display:inline-block;
+}
+ul {
+    float: right;
+    display: inline;
+    margin: 0;
+    margin-right: 60px;
+    padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: rgb(244, 244, 244);}
+ul li:hover ul {display: block;}
+.dropdown {
+    position: absolute;
+    width: 137px;
+    display: none;
+    background-color: white;
+}
+.dropdown li { 
+    display: block; 
+}
+.dropdown li a {display:block;} 
+.dropdown li:hover {background: rgb(244, 244, 244);}
+
+.icon{display: none;}
+  
+@media screen and (max-width: 875px) {
+    nav ul{
+        display: none;
+    }
+
+    /* nav h3{
+        display: none;
+    } */
+  
+    /* #logo-img{
+      display: none;
+    } */
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+  
+@media screen and (max-width: 875px) {
+    nav h3{padding-left: 20px;}
+    .responsive #logo-img{display: none;}
+    nav.responsive{
+      height: auto;
+    }
+    nav.responsive ul{
+      display: block;
+      float: none;
+      text-align: left;
+      margin-right: 0px;
+    }
+    nav ul li{
+      display:block;
+      text-align: left;
+    }
+  
+    .responsive .dropdown{
+      display: none;
+      width: 100%;
+      z-index: 1;
+    }
+    .responsive li:hover ul {display: block;}
+}
+
+@media screen and (max-width: 550px) {
+    nav h3{display: none;}
+}
+
+.footer
+{
+  margin-top: 40px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #134347;
+  text-align: center;
+}
+
+.footer i
+{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  padding: 30px;
+}

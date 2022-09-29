@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href = "index.css" rel = "stylesheet" type = "text/css">
+    <link href = "styles.css" rel = "stylesheet" type = "text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title> Let's Grow! Alameda | Home</title>
+  </head>
+
+  <body>
+
+    <div id = "page-title"> <!-- i changed the name to make more sense -->
+      <h1>Let's Grow! Alameda</h1>
+      <a href = "grow.html#video"><button >This Week's Video</button></a>
+  </div>
+
+  <nav class="navbar" id="mynavbar">
+    <a href="index.html" id="logo-img"><img src = "images/logo.png"></a></li>
+    <h3>LET'S GROW</h3>
+    <a class="icon" href="javascript:void(0);" onclick="displayNavbar()"><i class="fa fa-bars"></i></a>
+    <ul id="navlist">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="grow.html">Grow</a>
+        <ul class="dropdown">
+          <li><a href = "grow.html#buy">Seeds</a></li>
+          <li><a href = "grow.html#video">Latest Video</a></li>
+          <li><a href="grow.html#featured">Featured Plants</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a>
+        <ul class="dropdown">
+          <li><a href = "about.html#about">Who We Are</a></li>
+          <li><a href="about.html#donate">Donate</a></li>
+          <li><a href = "about.html#faq">FAQ</a></li>
+          <li><a href = "about.html#contactInfo">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.youtube.com/channel/UCV6oHXxpptnC8Mbm12gGk_w">All Videos</a></li>
+    </ul>
+  </nav>
+
+    <div class = "soil">
+      <h2>Our Mission</h2>
+    </div>
+    <div class = "mission">
+      <h2>EASY. FUN. ACCESSIBLE.</h2>
+      <p> Let’s Grow! Alameda is a community-based initiative that promotes gardening and composting during
+        the current public health crisis. Coronavirus has impacted many people in different ways: unemployment,
+        cancellation of major events, quarantine, and mental health. Studies demonstrate that young people bear
+        a disproportionate burden of mental health difficulties, including stress and anxiety. Gardening has long
+        been considered therapeutic for those struggling with mental health, thus offering a solution to this
+        serious problem. Many schools across Alameda have gardens and incorporate them into their curriculum
+        as an immersive, interactive experience that helps learn about scientific topics. However, such gardens
+        cannot be utilized during quarantine, so the environmental and health benefits associated with gardening
+        are lost. We hope to encourage composting and gardening during this new era, especially amongst younger
+        students, such as those in elementary and middle schools. </p>
+  </div>
+
+  <div class = "process">
+    <h1>1</h1>
+    <h3>Get Seeds for a Plant</h3>
+    <p>Make sure to pick one with a two week germination period. The germination period is the length of time it
+      takes for the plant to grow.</p>
+    <center>
+      <img src = "images/mint.png" class = "seeds">
+      <img src ="images/marigold.png" class = "seeds">
+      <img src = "images/basil.png" class = "seeds">
+    </center>
+    <center><a href = "grow.html#buy"><button>Find More Plants</button></a></center>
+  </div>
+
+  <div class = "process2">
+      <h1>2</h1>
+      <h3>Watch Our Weekly Videos</h3>
+      <p>Learn the proper way to care for your plants! We will demonstrate how to use common household items
+        to make containers for your plant, and provide other tips and tricks to make gardening easier.</p>
+      <h4> Episode 1: Meet the Growmies</h4>
+      <p id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/R83f6KWkJUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <center><p id="video-small"><iframe width="300" height="200" src="https://www.youtube.com/embed/R83f6KWkJUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></center>
+  </div>
+
+  <div class = "process">
+      <h1>3</h1>
+      <h3>Enjoy Your New Plant!</h3>
+      <p>Stay tuned for bonus content on cooking and art projects with your new plant. Send in photos of you
+        and your plant to @letsgrowalameda on Instagram to be on our Featured Plants page. If you had fun
+        growing your plant, we encourage you to repeat the process with a different type of seed!</p>
+      <img class="plant" src = "images/clipart.png">
+      <center><a href = "grow.html#featured"><button>Featured Plants</button></a></center>
+  </div>
+
+  <div class="footer">
+    <a href= "https://www.instagram.com/letsgrowalameda/ " target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/letsgrow.alameda.1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href= "https://www.youtube.com/channel/UCV6oHXxpptnC8Mbm12gGk_w" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  </body>
+</html>

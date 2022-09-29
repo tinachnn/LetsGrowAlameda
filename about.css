@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+
+body{
+    background-color: rgb(138,188,159,0.5);
+    font-family: "Catamaran";
+}
+#page-title{
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("images/members.png");
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+
+#page-title h1 {
+    font-size: 20vmin;
+    color: white;
+} 
+
+.floatLeft{
+    float: left;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+  
+.floatRight{
+    float: right;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content
+{
+    padding: 30px 10vw 30px 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content p{
+    line-height: 1.45;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.content img {
+    width: 45vmin;
+}
+
+#about img
+{
+    width: 35vh;
+}
+
+.question {
+    background-color: rgba(255,255,255,0.0); 
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+.current, .question:hover {
+    background-color: rgba(138,188,159,0.5); 
+}
+  
+.question:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.current:after {
+    content: "\2212";
+}
+  
+.answer {
+    padding: 0 18px;
+    background-color: rgba(255,255,255,0.5); 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#contactInfo
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#form-small
+{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #form{
+        display: none;
+    }
+    #form-small{
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #about img{
+        float: none;
+    }
+
+    .content img{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+    }
+}
